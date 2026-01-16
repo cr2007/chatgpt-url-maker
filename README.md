@@ -1,75 +1,39 @@
-# React + TypeScript + Vite
+# ChatGPT Prompt URL Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small web app built in [Vite](https://vite.dev) that builds shareable [ChatGPT](https://chat.com) URLs with prefilled prompts and optional ChatGPT feature hints.
 
-Currently, two official plugins are available:
+You can try out the app now at https://cr2007.github.io/chatgpt-url-maker
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Why this helps
+- Create, copy, and open URLs that prefill prompts in ChatGPT for sharing or quick reuse.
+- Adds optional flags (features, temporary chat) to the URL so workflows can be shared precisely.
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+# Quick start
 
-Note: This will impact Vite dev & build performances.
+## Bun (recommended)
 
-## Expanding the ESLint configuration
+This application was built in [Bun](https://bun.sh), so it is recommended that you use Bun if possible.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Install and run
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+```sh
+# Clone the repository
+git clone https://github.com/cr2007/chatgpt-url-maker
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+bun i   # Installs the dependencies
+bun dev # Starts the development server
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Node.js 
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+If you wish to run the application via [Node.js](), you can do so using the following steps:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```sh
+# Clone the repository
+git clone https://github.com/cr2007/chatgpt-url-maker
+
+npm i       # Installs the dependencies
+npm run dev # Starts the development server
 ```
