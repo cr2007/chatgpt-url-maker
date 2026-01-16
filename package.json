@@ -3,6 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": {
+    "name": "Chandrashekhar R",
+    "email": "github@csk.fyi"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
