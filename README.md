@@ -21,19 +21,25 @@ This application was built in [Bun](https://bun.sh), so it is recommended that y
 ```sh
 # Clone the repository
 git clone https://github.com/cr2007/chatgpt-url-maker
+cd chatgpt-url-maker
 
 bun i   # Installs the dependencies
 bun dev # Starts the development server
 ```
 
+And then you can access the web app at http://localhost:5173
+
 ## Node.js 
 
-If you wish to run the application via [Node.js](), you can do so using the following steps:
+If you wish to run the application via [Node.js](https://nodejs.org), you can do so using the following steps:
 
 ```sh
 # Clone the repository
 git clone https://github.com/cr2007/chatgpt-url-maker
+cd chatgpt-url-maker
 
 npm i       # Installs the dependencies
 npm run dev # Starts the development server
 ```
+
+And then you can access the web app at http://localhost:5173
